@@ -10,9 +10,9 @@ def directors_totals(nds)
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   # pp nds
     result = {}
-    row_index = 0 
+    director_index = 0 
     
-    while row_index < directors_database.length do 
+    while director_index < directors_database.length do 
       column_index = 0
       while column_index < directors_database.length do
         inner_len = directors_database[row_index][column_index].length
