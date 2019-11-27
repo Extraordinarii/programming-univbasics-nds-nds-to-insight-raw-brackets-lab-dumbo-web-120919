@@ -20,10 +20,9 @@ def directors_totals(nds)
         result[director_name] += directors_database[director_index][:movies][movie_index][:worldwide_gross]
         movie_index -= -1
       end 
-      
-        
-
-grand_total
+      director_index -= -1
+    end 
+      result
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
