@@ -25,7 +25,7 @@ def directors_totals(nds)
       row_index -= -1
     end 
   result = grand_total
-  result
+  p result
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
