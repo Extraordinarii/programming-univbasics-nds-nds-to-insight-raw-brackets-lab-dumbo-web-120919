@@ -3,7 +3,7 @@ require 'directors_database'
 require 'pp'
 
 def directors_totals(nds)
-  directors_database = nds
+#  directors_database = nds
   # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #
@@ -13,13 +13,13 @@ def directors_totals(nds)
     result = {}
     director_index = 0 
     
-    while director_index < directors_database.length do 
-      director_name = directors_database[director_index][:name]
+    while director_index < nds.length do 
+      director_name = nds[director_index][:name]
       result[director_name] = 0 
       movie_index = 0
       
-    while movie_index < directors_database[director_index][:movies].length do 
-        result[director_name] += directors_database[director_index][:movies][movie_index][:worldwide_gross]
+    while movie_index < nds[director_index][:movies].length do 
+        result[director_name] += nds[director_index][:movies][movie_index][:worldwide_gross]
         movie_index -= -1
       end 
       director_index -= -1
