@@ -13,7 +13,7 @@ def directors_totals(nds)
     director_index = 0 
     
     while director_index < directors_database.length do 
-      column_index = 0
+      director_name = directors_database[director_index]
         inner_len = directors_database[row_index][column_index].length
         inner_index = 0 
         while inner_index < inner_len do 
