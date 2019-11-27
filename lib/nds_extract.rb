@@ -18,17 +18,7 @@ def directors_totals(nds)
       movie_index = 0
       while movie_index < directors_database.length do 
         
-      
-        inner_len = directors_database[row_index][column_index].length
-        inner_index = 0 
-        while inner_index < inner_len do 
-          grand_total += directors_database[row_index][column_index][inner_index][:price]
-          inner_index -= -1 
-        end 
-        column_index -= -1 
-      end 
-      row_index -= -1
-    end 
+        
 
 grand_total
   #
